@@ -1,0 +1,60 @@
+﻿========================================
+시스템 정보
+========================================
+세션 ID: 20260130_003153
+로그 생성 시간: 2026-01-30 00:31:56
+
+운영 체제:
+  OS: Microsoft Windows NT 6.2.9200.0
+  .NET 버전: 4.0.30319.42000
+  프로세서 수: 32
+  시스템 디렉토리: C:\WINDOWS\system32
+
+GPU 정보:
+  GPU: NVIDIA GeForce RTX 5080
+    드라이버 버전: 32.0.15.9174
+    메모리: 4095 MB
+  GPU: Intel(R) UHD Graphics 770
+    드라이버 버전: 32.0.101.6129
+    메모리: 2047 MB
+
+디스플레이 정보:
+  디스플레이 1: \\.\DISPLAY1
+    해상도: 2560x1440
+    주 디스플레이: 예
+
+관리자 권한: 있음
+
+========================================
+
+[2026-01-30 00:31:56] WARNING: README.md 다운로드 시작: https://raw.githubusercontent.com/hvgfhfk/Gamma/main/README.md
+[2026-01-30 00:31:56] WARNING: raw URL 접근 시도: https://raw.githubusercontent.com/hvgfhfk/Gamma/main/README.md
+[2026-01-30 00:31:56] WARNING: HTTP 응답 상태: OK
+[2026-01-30 00:31:56] WARNING: README.md 다운로드 성공. 길이: 4929 문자
+[2026-01-30 00:31:56] WARNING: README.md 내용 미리보기:
+# Gamma Controller
+
+Windows 디스플레이의 감마, 밝기, 대비를 실시간으로 조정하는 유틸리티입니다.
+
+## 버전 정보
+
+```
+VERSION=2.1.0
+SHA256=fce07f125ce784245393d674df1cf28113cee620271839bc02ec0c513c94fb9a
+```
+
+**참고**: 자동 업데이트 기능을 사용하려면 위 형식으로 버전 정보를 유지해야 합니다. 새로운 버전을 릴리즈할 때마다 이 값을 업데이트하세요.
+
+## 주요 기능
+
+- 🎨 **감마/밝기/대비 조정**: NVIDIA 제어판과 동일한 방식으로 디스플레이 설정 조정
+- 🖥️ **다중 모니터 지원**: 2개 이상의 모니터가 연결된 경우 특정 모니터 선택 또는 모든 모니터에 적용 가능
+- ⌨️ **단축키 지원**: 커스텀 단축키로 빠르게 설정 전환
+- 🔍 **프로세스 자동 감지**: 특정 프로그램 실행 시 자동으로 설정 적용
+- 🚀 **자동 실행**: Windows 시작 시 자동 ...
+[2026-01-30 00:31:56] WARNING: VERSION 파싱 성공: 2.1.0.0
+[2026-01-30 00:31:56] WARNING: 버전 정보 파싱 성공: 2.1.0.0, SHA256: fce07f12...
+[2026-01-30 00:31:57] WARNING: 업데이트 파일 다운로드 시작: https://github.com/hvgfhfk/Gamma/releases/latest/download/Gamma.exe
+[2026-01-30 00:31:57] WARNING: 다운로드 HTTP 응답 상태: OK
+[2026-01-30 00:31:57] WARNING: 업데이트 파일 다운로드 완료: C:\Users\Jun\AppData\Local\Temp\update_e5189beb-0b02-4813-90f0-568f8caaed47.exe (295424 bytes)
+[2026-01-30 00:31:57] WARNING: Updater.exe를 찾을 수 없습니다: C:\Users\Jun\source\repos\RPAapp\Gamma\Updater.exe
