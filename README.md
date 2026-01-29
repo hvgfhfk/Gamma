@@ -5,7 +5,7 @@ Windows 디스플레이의 감마, 밝기, 대비를 실시간으로 조정하�
 ## 버전 정보
 
 ```
-VERSION=2.1.0
+VERSION=1.1.0
 SHA256=fce07f125ce784245393d674df1cf28113cee620271839bc02ec0c513c94fb9a
 ```
 
