@@ -5,7 +5,7 @@ Windows 디스플레이의 감마, 밝기, 대비를 실시간으로 조정하�
 ## 버전 정보
 
 ```
-VERSION=1.1.0
+VERSION=2.1.0
 SHA256=업데이트파일의_SHA256_해시값을_여기에_입력하세요
 ```
 
@@ -35,32 +35,6 @@ SHA256=업데이트파일의_SHA256_해시값을_여기에_입력하세요
 VERSION=1.2.3
 SHA256=업데이트파일의_SHA256_해시값
 ```
-
-**주의사항:**
-- `VERSION`은 Semantic Version 형식 (Major.Minor.Patch)을 사용합니다
-- `SHA256`은 GitHub Release의 `update.zip` 파일의 SHA256 해시값입니다
-- 업데이트 파일은 `https://github.com/{OWNER}/{REPO}/releases/latest/download/update.zip`에서 다운로드됩니다
-- SHA256 해시 검증을 통해 파일 무결성을 보장합니다
-
-### 개발자용 설정
-
-자동 업데이트 기능을 사용하려면 `Services/UpdateService.cs` 파일에서 다음 상수를 설정해야 합니다:
-
-```csharp
-private const string GITHUB_REPO_OWNER = "YOUR_USERNAME"; // GitHub 사용자명 또는 조직명
-private const string GITHUB_REPO_NAME = "YOUR_REPO_NAME"; // Repository 이름
-```
-
-### 업데이트 파일 준비
-
-1. 업데이트할 파일들을 포함한 `update.zip` 파일 생성
-   - `update.zip`에는 `Gamma.exe`, `Gamma.exe.config`, `Updater.exe` 및 기타 필요한 파일들을 포함해야 합니다
-2. `update.zip` 파일의 SHA256 해시 계산
-   - PowerShell: `Get-FileHash -Path "update.zip" -Algorithm SHA256`
-   - CMD: `certutil -hashfile update.zip SHA256`
-3. GitHub Release에 `update.zip` 파일 업로드
-   - Release의 Assets에 정확히 `update.zip` 파일명으로 업로드해야 합니다
-4. README.md 상단의 버전 정보 섹션에 버전 및 SHA256 해시 업데이트
 
 ## 시스템 요구사항
 
@@ -193,16 +167,6 @@ private const string GITHUB_REPO_NAME = "YOUR_REPO_NAME"; // Repository 이름
 3. 특정 모니터에만 적용하려면 해당 모니터만 선택
 4. 모든 모니터에 적용하려면 "모든 모니터에 적용" 체크박스 선택 또는 모든 모니터를 개별 선택
 
-### 자동 업데이트가 작동하지 않는 경우
-
-1. **인터넷 연결 확인**: GitHub에 접근할 수 있는지 확인하세요
-2. **방화벽 설정 확인**: 프로그램이 HTTPS 연결을 할 수 있는지 확인하세요
-3. **Updater.exe 확인**: 프로그램과 같은 폴더에 `Updater.exe` 파일이 있는지 확인하세요
-4. **로그 파일 확인**: `error_log.txt` 파일에서 업데이트 관련 오류 메시지를 확인하세요
-5. **수동 업데이트**: 자동 업데이트가 실패하는 경우 GitHub Release에서 최신 버전을 수동으로 다운로드하여 설치할 수 있습니다
-
-자세한 문제 해결 방법은 [TROUBLESHOOTING.md](TROUBLESHOOTING.md) 파일을 참조하세요.
-
 ## 파일 구조
 
 ```
@@ -247,9 +211,3 @@ Copyright © 2026
 
 문제가 발생하거나 제안사항이 있으시면 `error_log.txt` 파일과 함께 문의해주세요. 시스템 환경 진단 기능을 사용하여 문제를 진단하고 해결할 수 있습니다.
 
-## 관련 문서
-
-- [INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md) - 상세 설치 가이드
-- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - 문제 해결 가이드
-- [RELEASE_NOTES.md](RELEASE_NOTES.md) - 릴리즈 노트
-- [UPDATE_SETUP_GUIDE.md](UPDATE_SETUP_GUIDE.md) - 자동 업데이트 기능 설정 가이드
