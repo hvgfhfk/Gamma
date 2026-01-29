@@ -211,3 +211,10 @@ Copyright © 2026
 ## 문의 및 지원
 
 문제가 발생하거나 제안사항이 있으시면 `error_log.txt` 파일과 함께 문의해주세요. 시스템 환경 진단 기능을 사용하여 문제를 진단하고 해결할 수 있습니다.
+
+## 관련 문서
+
+- [INSTALLATION_GUIDE.md](INSTALLATION_GUIDE.md) - 상세 설치 가이드
+- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - 문제 해결 가이드
+- [RELEASE_NOTES.md](RELEASE_NOTES.md) - 릴리즈 노트
+- [UPDATE_SETUP_GUIDE.md](UPDATE_SETUP_GUIDE.md) - 자동 업데이트 기능 설정 가이드
